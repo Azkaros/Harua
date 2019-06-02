@@ -32,4 +32,4 @@ fs.readdir("./évents/", (err, files) => {
 });
 
 client.config = config;
-client.login(config.token);
+client.login(process.env.TOKEN);
