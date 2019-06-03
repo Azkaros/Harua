@@ -6,8 +6,3 @@ module.exports = async (client, guild) => {
     console.log(`Nouveau serveur rejoint: ${guild.name} (id: ${guild.id}). Il a ${guild.memberCount} membres!`);
     client.user.setPresence({ game: { name: `h!help | ${client.guilds.size} | ${client.users.size}` }, status: 'online' });
     client.user.setGame(`h!help | aide ${client.guilds.size} serveurs !`, 'https://www.twitch.tv/nagitoyourgoodboy');
-    
-    const channel = client.channels.find('name', "【🌸】join-leave-server-bot-notif")
-    
-    channel.send(`Nouveau serveur rejoint: ${guild.name} (id: ${guild.id}). Il a ${guild.memberCount} membres!`);
-}
