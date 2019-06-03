@@ -3,6 +3,7 @@ const fs = require('fs');
 const client = new Discord.Client();
 
 exports.run = (client, message, args) => {
+    if (!message.member.hasPermissions ('ADMINISTRATOR')) return message.reply(":x: Merci de donner la permissions `ADMINISTRATEUR` au bot.")
 fs.readdir('./commands/', (err, files) =>{  
     let jsFile = files.filter(f => f.split('.').pop() === 'js')
     let bicon = client.user.displayAvatarURL;
