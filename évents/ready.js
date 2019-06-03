@@ -13,7 +13,7 @@ module.exports = async (client) => {
   client.guilds.map((guild) => console.log(`Name: ${guild.name} (ID: ${guild.id}) ✔`)); 
   client.user.setPresence({ game: { name: `h!help | ${client.guilds.size} | ${client.users.size}` }, status: 'online' });
   client.user.setGame(`h!help | aide ${client.guilds.size} serveurs !`, 'https://www.twitch.tv/nagitoyourgoodboy');
-  const channel = client.channels.find('name', "launch-bot-alert")
+  const channel = client.channels.find('name', "【🌸】launch-bot-alert")
   let bicon = client.user.displayAvatarURL; 
 
   const embed = new Discord.RichEmbed()
