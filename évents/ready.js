@@ -26,5 +26,4 @@ module.exports = async (client) => {
     channel.send(embed);
 })
 })
-
 }
