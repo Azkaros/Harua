@@ -3,9 +3,8 @@ const fs = require('fs');
 const client = new Discord.Client();
 
 exports.run = (client, message, args) => {
-    if (!message.member.hasPermissions ('ADMINISTRATOR')) return message.reply(":x: Merci de donner la permissions `ADMINISTRATEUR` au bot.")
-fs.readdir('./commands/', (err, files) =>{  
-    let jsFile = files.filter(f => f.split('.').pop() === 'js')
+        fs.readdir('./commands/', (err, files) =>{  
+        let jsFile = files.filter(f => f.split('.').pop() === 'js')
     let bicon = client.user.displayAvatarURL;
 
     let embed = new Discord.RichEmbed()
@@ -18,8 +17,8 @@ fs.readdir('./commands/', (err, files) =>{
         .setThumbnail(bicon)
         .setTimestamp()
         .setFooter(`${client.user.username}`, `${client.user.displayAvatarURL}`)
-        .setAuthor('Commandes:')
-        .setDescription(`${jsFile.length} Commandes`)
+        .setAuthor(`${jsFile.length} Commandes:`)
+        .setDescription("Merci de donner la permissions `AJOUTER DES RÉACTIONS` au bot.")
         .addField("• Commandes fun 🤖","Toutes les commandes fun et utiles présentent avec le bot")
         .addField("• Commandes images 💎","Toutes les commandes d'images présentent avec le bot")
         .addField("• Commandes NSFW 🔞","Toutes les commandes NSFW présentent avec le bot")
@@ -44,7 +43,7 @@ fs.readdir('./commands/', (err, files) =>{
     .setTimestamp()
     .setAuthor('Commandes pour les images:')
     .setDescription('Toutes les commandes pour les images ``h!``')
-    .addField('• Commandes de génération',"``cat`` - ``dog`` - ``meme`` - ``pika`` - ``jul`` - ``anime`` - ``smug`` - ``lizard`` - ``wallpaper``")
+    .addField('• Commandes de génération',"``cat`` - ``dog`` - ``meme`` - ``pika`` - ``jul`` - ``anime`` - ``smug`` - ``lizard`` - ``wallpaper`` - ``neko``")
     .addField('• Commandes intéractive (mention obliatoire)',"``kiss`` - ``hug`` - ``baka``- ``slap`` - ``cuddle`` - ``tickle`` - ``pat`` - ``feed``")
     .addField('• Commandes pour votre avatar',"``avatar`` - ``serveravatar`` - ``random_avatar`` - ``whatspokemon`` - ``captcha`` - ``beautiful`` - ``treasure`` - ``bobross`` - ``blur`` - ``prison`` - ``phvideo``")
     .setFooter(`${client.user.username}`, `${client.user.displayAvatarURL}`)
@@ -55,7 +54,7 @@ fs.readdir('./commands/', (err, files) =>{
     .setTimestamp()
     .setAuthor('Commandes pour les images NSFW:')
     .setDescription('Toutes les commandes pour les images NSFW ``h!``')
-    .addField('• Commandes NSFW 2D',"``neko`` - ``boobs`` - ``pussy`` - ``hentai`` - ``kuni`` - ``trap`` - ``yuri`` - ``feet`` - ``random_avatar_nsfw``")
+    .addField('• Commandes NSFW 2D',"``lewdneko`` - ``boobs`` - ``pussy`` - ``hentai`` - ``kuni`` - ``trap`` - ``yuri`` - ``feet`` - ``random_avatar_nsfw``")
     .addField('• Commandes NSFW 3D',"``milf`` - ``realgirl`` - ``asian`` - ``booby`` - ``4k``")
     .addField('• Commandes intéractive (mention obligatoire)',"``fuck`` - ``blowjob`` - ``spank`` - ``anal``")
     .setFooter(`${client.user.username}`, `${client.user.displayAvatarURL}`)
