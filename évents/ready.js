@@ -11,7 +11,7 @@ module.exports = async (client) => {
     
     console.log(`${client.user.username} has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds - With ${jsFile.length} Commands and ${jsFiles.length} Event✔`);
   client.guilds.map((guild) => console.log(`Name: ${guild.name} (ID: ${guild.id}) ✔`)); 
-  client.user.setPresence({ game: { name: `h!help | ${client.guilds.size} | ${client.users.size}` }, status: 'online' });
+  client.user.setPresence({ game: { name: `h!help | aide ${client.guilds.size} serveurs !` }, status: 'online' });
   client.user.setGame(`h!help | aide ${client.guilds.size} serveurs !`, 'https://www.twitch.tv/nagitoyourgoodboy');
   const channel = client.channels.find('name', "【🌸】launch-bot-alert")
   let bicon = client.user.displayAvatarURL; 
