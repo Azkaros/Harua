@@ -54,7 +54,7 @@ exports.run = (client, message, args) => {
     .setTimestamp()
     .setAuthor('Commandes pour les images NSFW:')
     .setDescription('Toutes les commandes pour les images NSFW ``h!``')
-    .addField('• Commandes NSFW 2D',"``lewdneko`` - ``boobs`` - ``pussy`` - ``hentai`` - ``kuni`` - ``trap`` - ``yuri`` - ``feet`` - ``random_avatar_nsfw``")
+    .addField('• Commandes NSFW 2D',"``boobs`` - ``pussy`` - ``hentai`` - ``kuni`` - ``trap`` - ``yuri`` - ``feet`` - ``random_avatar_nsfw``")
     .addField('• Commandes NSFW 3D',"``milf`` - ``realgirl`` - ``asian`` - ``booby`` - ``4k``")
     .addField('• Commandes intéractive (mention obligatoire)',"``fuck`` - ``blowjob`` - ``spank`` - ``anal``")
     .setFooter(`${client.user.username}`, `${client.user.displayAvatarURL}`)
