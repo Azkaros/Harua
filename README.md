@@ -1,6 +1,12 @@
 # Harua
 Harua Bot Discord
 
+
+
+!! Abandoned project !!
+
+
+
 [![Discord server](https://discordapp.com/api/guilds/472860333783121973/embed.png?style=banner4)](https://discord.gg/PeRjhJa)
 
 Use h!help for more informations. 
